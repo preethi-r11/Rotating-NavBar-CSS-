@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: #f1d30d;
+    margin-top: 80px;
+}
+
+.home{
+    width: 100px;
+    height: 120px;
+    margin: auto;
+}
+
+.box{
+    background-color: #28303d;
+    color: #f1d30d;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out;
+    transform-origin: 0 0;
+}
+
+.home:hover .box{
+    transform: rotateY(-90deg);
+    cursor: pointer;
+}
+
+
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+}
+
+.front{
+    transform: rotateY(0deg);
+    background-color:  #393e46;
+}
+
+.right{
+    transform: rotateY(90deg);
+    left: 80px;
+    background-color: #f1d30d;
+    color: #393e46;
+    font-size: 1rem;
+    text-align: center;
+}   
+
+
+
